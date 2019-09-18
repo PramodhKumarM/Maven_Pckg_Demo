@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.Maven_Pckg_Demo.app</groupId>
-  <artifactId>my-app</artifactId>
+  <groupId>com.Maven_Pckg_Demo.DivideDemo</groupId>
+  <artifactId>Maven_Pckg_Demo</artifactId>
   <packaging>jar</packaging>
   <version>1.0.1</version>
-  <name>my-app</name>
+  <name>maven-app-gpr</name>
   <url>http://maven.pkg.github.com/PramodhKumarM</url>
   
     <properties>
@@ -18,12 +18,17 @@
     </properties>
   
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.0.0-M3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
   </dependencies>
   <build>
     <plugins>
