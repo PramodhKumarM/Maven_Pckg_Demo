@@ -1,4 +1,4 @@
-package com.techprimers.testing;
+package com.Maven_Pckg_Demo.testing;
 
 import org.junit.jupiter.api.*;
 
